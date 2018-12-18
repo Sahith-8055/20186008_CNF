@@ -2,21 +2,18 @@ import socket
 
 
 def main():
-
-    host = '10.10.9.59'
-    port = 3129
-
+    host  = '10.10.10.3'
+    port = 10021
     s = socket.socket()
     s.connect((host, port))
-
-    message = input("->")
-    while message != 'q':
-        s.send(message.encode())
+    msg = input('--> ')
+    while msg != 'q':
+        s.send(msg.encode())
         data = s.recv(1024)
-        print("Received the output :" + str(data.decode()))
-        message = input("->")
+        print('received from server ' + str(data.decode()))
+        msg = input("--> ")
     s.close()
 
 
 if __name__ == '__main__':
-        main()
+    main()
