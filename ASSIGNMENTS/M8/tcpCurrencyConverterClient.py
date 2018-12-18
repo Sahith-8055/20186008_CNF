@@ -2,8 +2,8 @@ import socket
 
 
 def main():
-    host  = '10.10.10.3'
-    port = 10021
+    host = '10.10.9.35'
+    port = 10020
     s = socket.socket()
     s.connect((host, port))
     msg = input('--> ')

@@ -1,8 +1,9 @@
 import socket
 
+
 def main():
 
-    host = '10.10.10.3'
+    host = '10.10.9.35'
     port = 10022
 
     dollar = {'INR': 67.0, 'yen': 113.41, 'pound': 0.75}

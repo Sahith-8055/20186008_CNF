@@ -2,10 +2,10 @@ import socket
 
 
 def main():
-    host = '10.10.10.3'
+    host = '10.10.9.35'
     port = 10023
 
-    server = ('10.10.10.3', 10022)
+    server = ('10.10.9.35', 10022)
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     s.bind((host, port))
     message = input("-->")
