@@ -1,6 +1,7 @@
 import socket
 import sys
 import threading
+from _thread import *
 
 
 def receivemsg(sock):
@@ -10,7 +11,7 @@ def receivemsg(sock):
             msg = sock.recv(1024).decode('ascii')
             print(msg)
         except:
-            print('Server is Down. You are now Disconnected. Press enter to exit...')
+            print('Server is Down. You are now Disconnected. Press enter to exit..')
             serverDown = True
 
 
